@@ -39,7 +39,7 @@ public class DisplayNote extends AppCompatActivity implements NotesAdapter.OnNot
         displayList();
     }
 
-    private void displayList() {
+    public void displayList() {
         noteDatabase = NoteDatabase.getInstance(DisplayNote.this);
         new RetrieveTask(this).execute();
     }
